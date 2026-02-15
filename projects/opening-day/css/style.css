@@ -1,0 +1,123 @@
+/* Orange: DF4601
+Black: 090B0B
+White: FFFFFC
+*/
+
+/* ===== BASE STYLES ===== */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #090B0B;
+    margin: 0;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+}
+
+/* ===== HEADER + FOOTER ===== */
+header,
+footer {
+    background-color: #090B0B;
+    color: #FFFFFC;
+    text-align: center;
+    padding: 2em;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin: 0.3em 0;
+}
+
+header h2 {
+    color: #DF4601;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.date-time {
+    color: #DF4601;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    max-width: 1000px;
+    margin: 3em auto;
+    padding: 0 1.5em;
+}
+
+h2 {
+    color: #DF4601;
+    font-size: 1.6em;
+}
+
+a {
+    color: #090B0B;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #DF4601;
+}
+
+/* Intro section */
+.intro {
+    font-size: 1.1em;
+}
+
+/* ===== TICKETS BUTTON ===== */
+.tickets {
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+.tickets a {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #090B0B;
+    color: #FFFFFC;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.tickets a:hover {
+    background-color: #DF4601;
+}
+
+.tickets em {
+    display: block;
+    margin-top: 0.5em;
+}
+
+/* ===== GAME DETAILS SECTION ===== */
+.game-details {
+    background-color: #DF4601;
+    color: #FFFFFC;
+    text-align: center;
+    padding: 2em;
+    margin: 3em 0;
+}
+
+/* ===== FAQ SECTION ===== */
+.faq {
+    border-left: 4px solid #DF4601;
+    padding-left: 1.5em;
+    margin-bottom: 3em;
+}
+
+.faq h3 {
+    margin-top: 1.5em;
+}
+
+footer {
+    font-size: 0.85em;
+}
