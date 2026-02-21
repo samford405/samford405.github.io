@@ -1,0 +1,101 @@
+/* ==============================
+   THE DAILY LOAF - STYLESHEET
+   Fonts:
+   - Newsreader (Headings)
+   - DM Sans (Body)
+
+   Colors:
+   - Black: #02111B
+   - Cream: #E0DDCF
+   - White: #FCFCFC
+================================ */
+
+
+/* ===== GLOBAL ===== */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FCFCFC;
+    color: #02111B;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #02111B;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #FCFCFC;
+    margin-bottom: 20px;
+}
+
+/* Nav Links */
+
+nav a {
+    color: #FCFCFC;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===== SECTIONS ===== */
+
+section {
+    padding: 60px 0;
+}
+
+
+/* ===== VISIT US SECTION ===== */
+/* Add class="visit-box" to that section in HTML */
+
+.visit-box {
+    background-color: #E0DDCF;
+    color: #02111B;
+    text-align: center;
+}
+
+
+/* ===== HEADLINES GRID ITEMS ===== */
+
+section h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== LETTERS ===== */
+
+em {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #02111B;
+    color: #FCFCFC;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+}
