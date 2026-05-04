@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Streaming and Song Length: How Spotify Changed Modern Music Structure</title>
+    <meta name="description" content="A data-driven investigation into how streaming platforms have shortened popular songs and reshaped modern music structure.">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Music Study</a>
+        <div class="navbar-nav">
+            <a class="nav-link" href="#story">Story</a>
+            <a class="nav-link" href="#data">Data</a>
+            <a class="nav-link" href="#interactive">Interactives</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero text-white text-center d-flex align-items-center justify-content-center">
+    <div>
+        <h1>How Streaming Changed the Shape of Hit Songs</h1>
+        <p class="lead">From 4-minute stories to 2-minute loops</p>
+    </div>
+</header>
+
+<div class="container mt-5">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+
+<!-- STORY -->
+<section id="story">
+    <h2>The Disappearing Song Structure</h2>
+
+   
+<p>
+There was a time when popular music told a full story. Songs often opened with a slow instrumental introduction, developed through multiple verses, and built toward a climactic chorus before resolving with a bridge or extended outro. This structure allowed artists to experiment, develop themes, and take listeners on a journey. In today’s streaming-driven music landscape, however, that traditional arc is becoming increasingly rare.
+</p>
+
+<p>
+Modern hit songs are noticeably shorter, faster, and more repetitive. Instead of unfolding gradually, many tracks now prioritize immediate engagement. The opening seconds of a song—once used for atmosphere or buildup—are now critical real estate. Artists and producers often place the hook, or most memorable part of the song, right at the beginning to capture attention instantly.
+</p>
+
+<p>
+Data from the Billboard Hot 100 illustrates just how dramatic this shift has been. In the mid-1990s, the average length of a hit song hovered just above four minutes. By the mid-2000s, that average began to decline slightly, but the most significant drop has occurred in the streaming era. By the early 2020s, many chart-topping songs averaged closer to two-and-a-half minutes, with some dipping below the two-minute mark entirely.
+</p>
+
+<p>
+ On Spotify, for example, a stream is counted after roughly 30 seconds of listening. This means that songs no longer need to sustain attention for several minutes to be successful; they only need to keep listeners engaged long enough to register a play.
+</p>
+
+<p>
+As a result, artists are incentivized to design songs that reach their most engaging moments as quickly as possible. Long intros, once a staple of genres like rock and R&B, have largely disappeared from mainstream hits. Instead, songs often begin with vocals or a chorus, immediately signaling what the listener can expect.
+</p>
+
+<p>
+Beyond intros, other structural elements have also been affected. The bridge—a section traditionally used to introduce contrast or emotional depth—is becoming less common in modern pop music. Instrumental solos, particularly guitar solos that were once a defining feature of many hit songs, are now rare. Outros have also been shortened or eliminated entirely, with many songs ending abruptly after the final chorus.
+</p>
+
+    <!-- IMAGE -->
+    <figure>
+        <img src="images/vintage player.jpg" class="img-fluid" alt="Music production setup">
+        <figcaption>
+            Modern music production often prioritizes streaming performance. Photo by Vintage King.
+        </figcaption>
+    </figure>
+</section>
+
+<!-- DATA -->
+<section id="data" class="mt-5">
+    <h2>What the Data Shows</h2>
+    <p>
+A closer examination of chart data from 1995 to 2025 reveals a consistent and measurable trend toward shorter songs. While there are occasional outliers, the overall trajectory is clear: as streaming has grown, song length has declined. This pattern holds across multiple genres, including pop, hip-hop, and even country music.
+</p>
+
+<p>
+Playlists also play a major role in shaping modern music structure. Curated playlists, whether created by platforms or users, have become one of the primary ways listeners discover new music. In these environments, songs are often consumed passively, with listeners skipping quickly between tracks. To stand out, songs must capture attention immediately and maintain it without unnecessary delays.
+</p>
+
+<p>
+The difference becomes especially clear when comparing song structures across eras. A typical hit from the 1990s might follow a pattern such as: intro, verse, verse, chorus, verse, chorus, bridge, solo, and outro. This structure allowed for variation and storytelling. In contrast, many modern songs follow a more condensed format: hook, verse, chorus, verse, chorus, and end. While efficient, this approach often sacrifices complexity for immediacy.
+</p>
+
+<p>
+Despite these changes, it would be inaccurate to suggest that modern music is less creative. Advances in digital production have allowed artists to layer sounds, experiment with textures, and create intricate arrangements within a shorter timeframe. In some cases, the constraint of a shorter song length has even encouraged innovation, forcing artists to deliver their ideas more concisely.
+</p>
+
+<p>
+Still, the broader trend raises questions about the future of musical storytelling. As streaming continues to dominate the industry, will longer, more complex song structures continue to decline? Or will there be a resurgence of extended formats as artists push back against the limitations of algorithm-driven platforms?
+</p>
+
+<p>
+Ultimately, the evolution of song length highlights the powerful influence of technology on art. Music has always adapted to the mediums through which it is distributed, from vinyl records to radio to digital downloads. Streaming is simply the latest force shaping how songs are created, structured, and consumed. Whether this shift represents progress or loss depends largely on how listeners—and artists—choose to respond.
+</p>
+
+    <!-- CHART -->
+    <div class="card p-3 my-4">
+        <h3>Average Song Length Over Time</h3>
+        <canvas id="songChart"></canvas>
+        <p class="small text-muted">
+            Source: Billboard Hot 100 Archives (1995–2025), streaming analytics reports.
+        </p>
+    </div>
+
+    <!-- IMAGE -->
+    <figure>
+        <img src="images/stack vinyl.jpg" class="img-fluid" alt="Vinyl records">
+        <figcaption>
+            Physical formats once encouraged longer storytelling in music. Photo by Samuel Ford.
+        </figcaption>
+    </figure>
+</section>
+
+<!-- INTERACTIVES -->
+<section id="interactive" class="mt-5">
+    <h2>Song Structure Comparison</h2>
+
+    <div class="btn-group mb-3">
+        <button class="btn btn-dark" onclick="show1995()">1995 Song</button>
+        <button class="btn btn-secondary" onclick="show2025()">2025 Song</button>
+    </div>
+
+    <div id="structureBox" class="p-3 border">
+        Click a year to compare structure.
+    </div>
+
+    <h3 class="mt-5">Timeline of Song Evolution</h3>
+    <ul>
+        <li><strong>1990s:</strong> Long intros, solos, bridges</li>
+        <li><strong>2000s:</strong> Radio edits shorten songs</li>
+        <li><strong>2010s:</strong> Streaming reshapes structure</li>
+        <li><strong>2020s:</strong> Hook-first songwriting dominates</li>
+    </ul>
+
+    <!-- VIDEO -->
+    <div class="mt-4">
+        <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/HzZ_urpj4As"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center mt-5 mb-3">
+    2026 Samuel Ford |
+    <a href="https://github.com/samford405/samford405.github.io/tree/main/portfolio" target="_blank">My Portfolio</a>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+function show1995() {
+    document.getElementById("structureBox").innerHTML =
+    "<strong>1995 Structure:</strong><br>" +
+    "Intro → Verse → Verse → Chorus → Verse → Chorus → Bridge → Solo → Outro" +
+    "<br><br><em>Examples:</em><br>" +
+    "• “Gangsta’s Paradise” – Coolio<br>" +
+    "• “Waterfalls” – TLC<br>" +
+    "• “Wonderwall” – Oasis";
+}
+
+function show2025() {
+    document.getElementById("structureBox").innerHTML =
+    "<strong>2025 Structure:</strong><br>" +
+    "Hook → Verse → Chorus → Verse → Chorus → End" +
+    "<br><br><em>Examples:</em><br>" +
+    "• “Kill Bill” – SZA<br>" +
+    "• “As It Was” – Harry Styles<br>" +
+    "• “Espresso” – Sabrina Carpenter";
+}
+
+// Chart
+const ctx = document.getElementById('songChart');
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['1995','2000','2005','2010','2015','2020','2025'],
+        datasets: [{
+            label: 'Average Song Length (minutes)',
+            data: [4.2,4.1,3.8,3.5,3.0,2.6,2.3],
+            borderWidth: 2
+        }]
+    }
+});
+</script>
+
+</body>
+</html>
