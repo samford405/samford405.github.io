@@ -1,6 +1,6 @@
-/* =========================
+/* 
    GLOBAL STYLES
-========================= */
+*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f4efed;
@@ -11,7 +11,7 @@ body {
 .hero {
     position: relative;
     height: 70vh;
-    background: url('../images/vintage player.jpg') center/cover no-repeat;
+    background: url('../images/vintage-player.jpg') center/cover no-repeat;
 }
 
 /* DARK OVERLAY */
@@ -59,7 +59,7 @@ figcaption {
     border-radius: 10px;
 }
 
-/* MEDIA QUERY (REQUIRED) */
+/* MEDIA QUERY*/
 @media (max-width: 768px) {
     .hero {
         height: 50vh;
