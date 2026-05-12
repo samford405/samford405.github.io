@@ -7,7 +7,7 @@ body {
     color: #222;
 }
 
-/* HERO */
+/* Big Image Title */
 .hero {
     position: relative;
     height: 70vh;
@@ -26,7 +26,7 @@ body {
     background: rgba(0, 0, 0, 0.5); /* adjust darkness here */
 }
 
-/* MAKE TEXT SIT ABOVE OVERLAY */
+
 .hero div {
     position: relative;
     z-index: 1;
